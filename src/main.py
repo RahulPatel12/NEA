@@ -17,7 +17,7 @@ class Game(ShowBase):
         self.win.requestProperties(self.win_props)
 
         # Load the environment model
-        self.environment = self.loader.loadModel("src/assets/models/environment/environment.egg")
+        self.environment = self.loader.loadModel("src/assets/models/environment/environment.egg.pz")
         self.environment.reparentTo(self.render)
 
         # Position the environment
@@ -25,7 +25,7 @@ class Game(ShowBase):
         self.environment.setPos(-8, 42, 0)
 
         # Add a simple player character
-        self.player = self.loader.loadModel("src/assets/models/player/jack.egg")
+        self.player = self.loader.loadModel("src/assets/models/player/jack.egg.pz")
         self.player.reparentTo(self.render)
         self.player.setScale(0.5, 0.5, 0.5)
         self.player.setPos(0, 10, 0)
